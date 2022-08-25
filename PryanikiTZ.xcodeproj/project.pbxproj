@@ -116,6 +116,7 @@
 		125103B828B7A4E9002AEDE6 /* PryanikiTZ */ = {
 			isa = PBXGroup;
 			children = (
+				12C8E7B928B7ACFE00042802 /* Model */,
 				125103B928B7A4E9002AEDE6 /* AppDelegate.swift */,
 				125103BB28B7A4E9002AEDE6 /* SceneDelegate.swift */,
 				125103BD28B7A4E9002AEDE6 /* ViewController.swift */,
@@ -144,6 +145,13 @@
 			path = PryanikiTZUITests;
 			sourceTree = "<group>";
 		};
+		12C8E7B928B7ACFE00042802 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C0B1720E0BF551FCDAB8464B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +162,6 @@
 				024CD4EDD1234EBEF803C51C /* Pods-PryanikiTZTests.debug.xcconfig */,
 				EB19067F646A14237B770E7D /* Pods-PryanikiTZTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
