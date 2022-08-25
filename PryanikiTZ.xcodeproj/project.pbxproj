@@ -16,6 +16,7 @@
 		125103D128B7A4EB002AEDE6 /* PryanikiTZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125103D028B7A4EB002AEDE6 /* PryanikiTZTests.swift */; };
 		125103DB28B7A4EB002AEDE6 /* PryanikiTZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125103DA28B7A4EB002AEDE6 /* PryanikiTZUITests.swift */; };
 		125103DD28B7A4EB002AEDE6 /* PryanikiTZUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125103DC28B7A4EB002AEDE6 /* PryanikiTZUITestsLaunchTests.swift */; };
+		12B3373328B7B36E007805F3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3373228B7B36E007805F3 /* AppCoordinator.swift */; };
 		12C8E7BC28B7B09100042802 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C8E7BB28B7B09100042802 /* Data.swift */; };
 		27BA8A112F7D5443162812FD /* Pods_PryanikiTZ_PryanikiTZUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3731910C508F8EEE131B0425 /* Pods_PryanikiTZ_PryanikiTZUITests.framework */; };
 		37B26B057729A2907BBF6CC3 /* Pods_PryanikiTZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B961C54B19F4B053765E0A95 /* Pods_PryanikiTZ.framework */; };
@@ -55,6 +56,7 @@
 		125103D628B7A4EB002AEDE6 /* PryanikiTZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PryanikiTZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		125103DA28B7A4EB002AEDE6 /* PryanikiTZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikiTZUITests.swift; sourceTree = "<group>"; };
 		125103DC28B7A4EB002AEDE6 /* PryanikiTZUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikiTZUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		12B3373228B7B36E007805F3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		12C8E7BB28B7B09100042802 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		1F6920564FC05B8BD26A6537 /* Pods_PryanikiTZTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PryanikiTZTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		283BDE8D1F5BEB53FBF925BE /* Pods-PryanikiTZ-PryanikiTZUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PryanikiTZ-PryanikiTZUITests.release.xcconfig"; path = "Target Support Files/Pods-PryanikiTZ-PryanikiTZUITests/Pods-PryanikiTZ-PryanikiTZUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				12C8E7B928B7ACFE00042802 /* Model */,
 				125103B928B7A4E9002AEDE6 /* AppDelegate.swift */,
+				12B3373228B7B36E007805F3 /* AppCoordinator.swift */,
 				125103BB28B7A4E9002AEDE6 /* SceneDelegate.swift */,
 				125103BD28B7A4E9002AEDE6 /* ViewController.swift */,
 				125103BF28B7A4E9002AEDE6 /* Main.storyboard */,
@@ -419,6 +422,7 @@
 			files = (
 				125103BE28B7A4E9002AEDE6 /* ViewController.swift in Sources */,
 				125103BA28B7A4E9002AEDE6 /* AppDelegate.swift in Sources */,
+				12B3373328B7B36E007805F3 /* AppCoordinator.swift in Sources */,
 				125103BC28B7A4E9002AEDE6 /* SceneDelegate.swift in Sources */,
 				12C8E7BC28B7B09100042802 /* Data.swift in Sources */,
 			);
@@ -605,7 +609,6 @@
 				INFOPLIST_FILE = PryanikiTZ/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -634,7 +637,6 @@
 				INFOPLIST_FILE = PryanikiTZ/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
