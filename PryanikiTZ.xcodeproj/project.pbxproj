@@ -16,6 +16,9 @@
 		125103D128B7A4EB002AEDE6 /* PryanikiTZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125103D028B7A4EB002AEDE6 /* PryanikiTZTests.swift */; };
 		125103DB28B7A4EB002AEDE6 /* PryanikiTZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125103DA28B7A4EB002AEDE6 /* PryanikiTZUITests.swift */; };
 		125103DD28B7A4EB002AEDE6 /* PryanikiTZUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125103DC28B7A4EB002AEDE6 /* PryanikiTZUITestsLaunchTests.swift */; };
+		27BA8A112F7D5443162812FD /* Pods_PryanikiTZ_PryanikiTZUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3731910C508F8EEE131B0425 /* Pods_PryanikiTZ_PryanikiTZUITests.framework */; };
+		37B26B057729A2907BBF6CC3 /* Pods_PryanikiTZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B961C54B19F4B053765E0A95 /* Pods_PryanikiTZ.framework */; };
+		5BFECE4759A8A8E8526F9B98 /* Pods_PryanikiTZTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6920564FC05B8BD26A6537 /* Pods_PryanikiTZTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		024CD4EDD1234EBEF803C51C /* Pods-PryanikiTZTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PryanikiTZTests.debug.xcconfig"; path = "Target Support Files/Pods-PryanikiTZTests/Pods-PryanikiTZTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1161F2925C495C256C947263 /* Pods-PryanikiTZ-PryanikiTZUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PryanikiTZ-PryanikiTZUITests.debug.xcconfig"; path = "Target Support Files/Pods-PryanikiTZ-PryanikiTZUITests/Pods-PryanikiTZ-PryanikiTZUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		125103B628B7A4E9002AEDE6 /* PryanikiTZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PryanikiTZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		125103B928B7A4E9002AEDE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		125103BB28B7A4E9002AEDE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		125103D628B7A4EB002AEDE6 /* PryanikiTZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PryanikiTZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		125103DA28B7A4EB002AEDE6 /* PryanikiTZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikiTZUITests.swift; sourceTree = "<group>"; };
 		125103DC28B7A4EB002AEDE6 /* PryanikiTZUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikiTZUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1F6920564FC05B8BD26A6537 /* Pods_PryanikiTZTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PryanikiTZTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		283BDE8D1F5BEB53FBF925BE /* Pods-PryanikiTZ-PryanikiTZUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PryanikiTZ-PryanikiTZUITests.release.xcconfig"; path = "Target Support Files/Pods-PryanikiTZ-PryanikiTZUITests/Pods-PryanikiTZ-PryanikiTZUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3622E1286DE454B61DFF1676 /* Pods-PryanikiTZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PryanikiTZ.release.xcconfig"; path = "Target Support Files/Pods-PryanikiTZ/Pods-PryanikiTZ.release.xcconfig"; sourceTree = "<group>"; };
+		3731910C508F8EEE131B0425 /* Pods_PryanikiTZ_PryanikiTZUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PryanikiTZ_PryanikiTZUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B961C54B19F4B053765E0A95 /* Pods_PryanikiTZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PryanikiTZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB19067F646A14237B770E7D /* Pods-PryanikiTZTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PryanikiTZTests.release.xcconfig"; path = "Target Support Files/Pods-PryanikiTZTests/Pods-PryanikiTZTests.release.xcconfig"; sourceTree = "<group>"; };
+		F4ABE319505C229C64C0CCFE /* Pods-PryanikiTZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PryanikiTZ.debug.xcconfig"; path = "Target Support Files/Pods-PryanikiTZ/Pods-PryanikiTZ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B26B057729A2907BBF6CC3 /* Pods_PryanikiTZ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BFECE4759A8A8E8526F9B98 /* Pods_PryanikiTZTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27BA8A112F7D5443162812FD /* Pods_PryanikiTZ_PryanikiTZUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				125103CF28B7A4EB002AEDE6 /* PryanikiTZTests */,
 				125103D928B7A4EB002AEDE6 /* PryanikiTZUITests */,
 				125103B728B7A4E9002AEDE6 /* Products */,
+				C0B1720E0BF551FCDAB8464B /* Pods */,
+				CBEA5308EF03219BAF42825F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +144,30 @@
 			path = PryanikiTZUITests;
 			sourceTree = "<group>";
 		};
+		C0B1720E0BF551FCDAB8464B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4ABE319505C229C64C0CCFE /* Pods-PryanikiTZ.debug.xcconfig */,
+				3622E1286DE454B61DFF1676 /* Pods-PryanikiTZ.release.xcconfig */,
+				1161F2925C495C256C947263 /* Pods-PryanikiTZ-PryanikiTZUITests.debug.xcconfig */,
+				283BDE8D1F5BEB53FBF925BE /* Pods-PryanikiTZ-PryanikiTZUITests.release.xcconfig */,
+				024CD4EDD1234EBEF803C51C /* Pods-PryanikiTZTests.debug.xcconfig */,
+				EB19067F646A14237B770E7D /* Pods-PryanikiTZTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CBEA5308EF03219BAF42825F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B961C54B19F4B053765E0A95 /* Pods_PryanikiTZ.framework */,
+				3731910C508F8EEE131B0425 /* Pods_PryanikiTZ_PryanikiTZUITests.framework */,
+				1F6920564FC05B8BD26A6537 /* Pods_PryanikiTZTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 125103E028B7A4EB002AEDE6 /* Build configuration list for PBXNativeTarget "PryanikiTZ" */;
 			buildPhases = (
+				E4C590E8BCCA4DF29BB17A99 /* [CP] Check Pods Manifest.lock */,
 				125103B228B7A4E9002AEDE6 /* Sources */,
 				125103B328B7A4E9002AEDE6 /* Frameworks */,
 				125103B428B7A4E9002AEDE6 /* Resources */,
+				AAA3380EFC0B43A0737F0FC8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 125103E328B7A4EB002AEDE6 /* Build configuration list for PBXNativeTarget "PryanikiTZTests" */;
 			buildPhases = (
+				0FB1A15D1CBAACAF6D77A15F /* [CP] Check Pods Manifest.lock */,
 				125103C828B7A4EB002AEDE6 /* Sources */,
 				125103C928B7A4EB002AEDE6 /* Frameworks */,
 				125103CA28B7A4EB002AEDE6 /* Resources */,
@@ -169,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 125103E628B7A4EB002AEDE6 /* Build configuration list for PBXNativeTarget "PryanikiTZUITests" */;
 			buildPhases = (
+				C382479598F9868A54649EB7 /* [CP] Check Pods Manifest.lock */,
 				125103D228B7A4EB002AEDE6 /* Sources */,
 				125103D328B7A4EB002AEDE6 /* Frameworks */,
 				125103D428B7A4EB002AEDE6 /* Resources */,
+				726F6ED841F740210A31083E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FB1A15D1CBAACAF6D77A15F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PryanikiTZTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		726F6ED841F740210A31083E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PryanikiTZ-PryanikiTZUITests/Pods-PryanikiTZ-PryanikiTZUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PryanikiTZ-PryanikiTZUITests/Pods-PryanikiTZ-PryanikiTZUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PryanikiTZ-PryanikiTZUITests/Pods-PryanikiTZ-PryanikiTZUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAA3380EFC0B43A0737F0FC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PryanikiTZ/Pods-PryanikiTZ-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PryanikiTZ/Pods-PryanikiTZ-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PryanikiTZ/Pods-PryanikiTZ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C382479598F9868A54649EB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PryanikiTZ-PryanikiTZUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4C590E8BCCA4DF29BB17A99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PryanikiTZ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		125103B228B7A4E9002AEDE6 /* Sources */ = {
@@ -434,6 +583,7 @@
 		};
 		125103E128B7A4EB002AEDE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4ABE319505C229C64C0CCFE /* Pods-PryanikiTZ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +612,7 @@
 		};
 		125103E228B7A4EB002AEDE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3622E1286DE454B61DFF1676 /* Pods-PryanikiTZ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +641,7 @@
 		};
 		125103E428B7A4EB002AEDE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 024CD4EDD1234EBEF803C51C /* Pods-PryanikiTZTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +667,7 @@
 		};
 		125103E528B7A4EB002AEDE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB19067F646A14237B770E7D /* Pods-PryanikiTZTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +693,7 @@
 		};
 		125103E728B7A4EB002AEDE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1161F2925C495C256C947263 /* Pods-PryanikiTZ-PryanikiTZUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +717,7 @@
 		};
 		125103E828B7A4EB002AEDE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 283BDE8D1F5BEB53FBF925BE /* Pods-PryanikiTZ-PryanikiTZUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
