@@ -8,24 +8,24 @@
 import Foundation
 
 // MARK: - DataModel
-struct Data {
+struct PryanikiData: Decodable {
     let data: [AnotherData]
     let view: [String]
 }
 
-struct AnotherData {
+struct AnotherData: Decodable {
     let name: String
     let data: DataClass
 }
 
-struct DataClass {
+struct DataClass: Decodable {
     let text: String?
     let url: String?
     let selectedID: Int?
     let variants: [Variant]?
 }
 
-struct Variant {
+struct Variant: Decodable {
     let id: Int
     let text: String
 }

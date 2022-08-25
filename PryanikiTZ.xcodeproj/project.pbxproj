@@ -17,7 +17,8 @@
 		125103DB28B7A4EB002AEDE6 /* PryanikiTZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125103DA28B7A4EB002AEDE6 /* PryanikiTZUITests.swift */; };
 		125103DD28B7A4EB002AEDE6 /* PryanikiTZUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125103DC28B7A4EB002AEDE6 /* PryanikiTZUITestsLaunchTests.swift */; };
 		12B3373328B7B36E007805F3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3373228B7B36E007805F3 /* AppCoordinator.swift */; };
-		12C8E7BC28B7B09100042802 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C8E7BB28B7B09100042802 /* Data.swift */; };
+		12B3373528B7BE1C007805F3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3373428B7BE1C007805F3 /* DataManager.swift */; };
+		12C8E7BC28B7B09100042802 /* PryanikiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C8E7BB28B7B09100042802 /* PryanikiData.swift */; };
 		27BA8A112F7D5443162812FD /* Pods_PryanikiTZ_PryanikiTZUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3731910C508F8EEE131B0425 /* Pods_PryanikiTZ_PryanikiTZUITests.framework */; };
 		37B26B057729A2907BBF6CC3 /* Pods_PryanikiTZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B961C54B19F4B053765E0A95 /* Pods_PryanikiTZ.framework */; };
 		5BFECE4759A8A8E8526F9B98 /* Pods_PryanikiTZTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6920564FC05B8BD26A6537 /* Pods_PryanikiTZTests.framework */; };
@@ -57,7 +58,8 @@
 		125103DA28B7A4EB002AEDE6 /* PryanikiTZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikiTZUITests.swift; sourceTree = "<group>"; };
 		125103DC28B7A4EB002AEDE6 /* PryanikiTZUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikiTZUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		12B3373228B7B36E007805F3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		12C8E7BB28B7B09100042802 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		12B3373428B7BE1C007805F3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		12C8E7BB28B7B09100042802 /* PryanikiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikiData.swift; sourceTree = "<group>"; };
 		1F6920564FC05B8BD26A6537 /* Pods_PryanikiTZTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PryanikiTZTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		283BDE8D1F5BEB53FBF925BE /* Pods-PryanikiTZ-PryanikiTZUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PryanikiTZ-PryanikiTZUITests.release.xcconfig"; path = "Target Support Files/Pods-PryanikiTZ-PryanikiTZUITests/Pods-PryanikiTZ-PryanikiTZUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3622E1286DE454B61DFF1676 /* Pods-PryanikiTZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PryanikiTZ.release.xcconfig"; path = "Target Support Files/Pods-PryanikiTZ/Pods-PryanikiTZ.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				125103C228B7A4EB002AEDE6 /* Assets.xcassets */,
 				125103C428B7A4EB002AEDE6 /* LaunchScreen.storyboard */,
 				125103C728B7A4EB002AEDE6 /* Info.plist */,
+				12B3373428B7BE1C007805F3 /* DataManager.swift */,
 			);
 			path = PryanikiTZ;
 			sourceTree = "<group>";
@@ -153,7 +156,7 @@
 		12C8E7B928B7ACFE00042802 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				12C8E7BB28B7B09100042802 /* Data.swift */,
+				12C8E7BB28B7B09100042802 /* PryanikiData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -421,10 +424,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				125103BE28B7A4E9002AEDE6 /* ViewController.swift in Sources */,
+				12B3373528B7BE1C007805F3 /* DataManager.swift in Sources */,
 				125103BA28B7A4E9002AEDE6 /* AppDelegate.swift in Sources */,
 				12B3373328B7B36E007805F3 /* AppCoordinator.swift in Sources */,
 				125103BC28B7A4E9002AEDE6 /* SceneDelegate.swift in Sources */,
-				12C8E7BC28B7B09100042802 /* Data.swift in Sources */,
+				12C8E7BC28B7B09100042802 /* PryanikiData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
