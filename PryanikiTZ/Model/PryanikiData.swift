@@ -7,21 +7,25 @@
 
 import Foundation
 
-// MARK: - DataModel
+// MARK: - Networking Data Model
 struct PryanikiData: Decodable {
     let data: [AnotherData]
-    let view: [String]
+    let view: [Names]
 }
 
 struct AnotherData: Decodable {
-    let name: String
+    let name: Names
     let data: DataClass
+}
+
+enum Names: String, Decodable {
+    case hz, picture, selector
 }
 
 struct DataClass: Decodable {
     let text: String?
     let url: String?
-    let selectedID: Int?
+    let selectedId: Int?
     let variants: [Variant]?
 }
 

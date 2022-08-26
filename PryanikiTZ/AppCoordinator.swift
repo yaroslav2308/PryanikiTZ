@@ -17,6 +17,7 @@ class AppCoordinator {
     
     func start() {
         let vc = ViewController()
+        vc.setUpVC(viewModel: PryanikiListDataViewModel())
         let navigationController = UINavigationController(rootViewController: vc)
         window.rootViewController = navigationController
     }
