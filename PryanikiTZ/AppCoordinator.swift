@@ -9,16 +9,25 @@ import Foundation
 import UIKit
 
 class AppCoordinator {
-    private let window: UIWindow
+    var nanigationController: UINavigationController
     
-    init(window: UIWindow) {
-        self.window = window
+    init(nav: UINavigationController) {
+        self.nanigationController = nav
     }
     
     func start() {
         let vc = ViewController()
+        vc.coordinator = self
         vc.setUpVC(viewModel: PryanikiListDataViewModel())
-        let navigationController = UINavigationController(rootViewController: vc)
-        window.rootViewController = navigationController
+        nanigationController.pushViewController(vc, animated: false)
+    }
+    
+    func detailView(text: String, index: Int, color: UIColor) {
+        let vc = DetailViewController()
+        vc.text = text
+        vc.index = index
+        vc.color = color
+        vc.coordinator = self
+        nanigationController.pushViewController(vc, animated: true)
     }
 }

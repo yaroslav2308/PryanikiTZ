@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 // MARK: - Domen Data Model
 struct DomenData {
@@ -14,4 +15,5 @@ struct DomenData {
     let url: String?
     let selectedId: Int?
     let variants: [Variant]?
+    let backgroundColor: UIColor
 }

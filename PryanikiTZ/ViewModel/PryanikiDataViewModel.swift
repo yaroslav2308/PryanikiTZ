@@ -11,7 +11,7 @@ import RxSwift
 
 class PryanikiListDataViewModel {
     
-    var items = BehaviorSubject(value: [DomenData]())
+    var someData = BehaviorSubject(value: [DomenData]())
     
     func fetchData() {
         // https://pryaniky.com/static/json/sample.json
@@ -20,7 +20,7 @@ class PryanikiListDataViewModel {
             switch response.result {
             case .success(let value):
                 let newItems = self.createItems(dataPrya: value)
-                self.items.on(.next(newItems))
+                self.someData.on(.next(newItems))
             case .failure(let error):
                 print("Something went wrong: \(error.localizedDescription)")
             }
@@ -35,21 +35,21 @@ class PryanikiListDataViewModel {
         }!.data
         
         let pictureTypeData = dataPrya.data.first { anotherData in
-            anotherData.name == .hz
+            anotherData.name == .picture
         }!.data
         
         let selectoeTypeData = dataPrya.data.first { anotherData in
-            anotherData.name == .hz
+            anotherData.name == .selector
         }!.data
         
         for type in dataPrya.view {
             switch type {
             case .hz:
-                domenDataArray.append(DomenData(type: .hz, text: hzTypeData.text, url: hzTypeData.url, selectedId: hzTypeData.selectedId, variants: hzTypeData.variants))
+                domenDataArray.append(DomenData(type: .hz, text: hzTypeData.text, url: hzTypeData.url, selectedId: hzTypeData.selectedId, variants: hzTypeData.variants, backgroundColor: .systemBlue))
             case .picture:
-                domenDataArray.append(DomenData(type: .picture, text: pictureTypeData.text, url: pictureTypeData.url, selectedId: pictureTypeData.selectedId, variants: pictureTypeData.variants))
+                domenDataArray.append(DomenData(type: .picture, text: pictureTypeData.text, url: pictureTypeData.url, selectedId: pictureTypeData.selectedId, variants: pictureTypeData.variants, backgroundColor: .systemPurple))
             case .selector:
-                domenDataArray.append(DomenData(type: .selector, text: selectoeTypeData.text, url: selectoeTypeData.url, selectedId: selectoeTypeData.selectedId, variants: selectoeTypeData.variants))
+                domenDataArray.append(DomenData(type: .selector, text: selectoeTypeData.text, url: selectoeTypeData.url, selectedId: selectoeTypeData.selectedId, variants: selectoeTypeData.variants, backgroundColor: .systemPink))
             }
         }
         
