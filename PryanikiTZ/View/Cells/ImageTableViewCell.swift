@@ -9,7 +9,7 @@ import UIKit
 
 class ImageTableViewCell: UITableViewCell {
     
-    var data: DomenData?
+    var data: DomainData?
     
     override func layoutSubviews() {
         textFromData.textColor = .white
@@ -35,6 +35,7 @@ class ImageTableViewCell: UITableViewCell {
     
 }
 
+// MARK: - UIImage extension to load image from url
 extension UIImageView {
     func load(url: URL) {
         DispatchQueue.global().async { [weak self] in

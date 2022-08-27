@@ -19,10 +19,12 @@ class ViewController: UIViewController {
     func setUpVC(viewModel: PryanikiListDataViewModel) {
         self.viewModel = viewModel
     }
-    // MARK: - Table View
+    
+    // Table View
     private lazy var tableView: UITableView = {
         let someTable = UITableView()
         someTable.translatesAutoresizingMaskIntoConstraints = false
+        // Custom cells registration
         someTable.register(UINib.init(nibName: "HzTableViewCell", bundle: nil), forCellReuseIdentifier: "hzCell")
         someTable.register(UINib.init(nibName: "ImageTableViewCell", bundle: nil), forCellReuseIdentifier: "imageCell")
         someTable.register(UINib.init(nibName: "SelectorTableViewCell", bundle: nil), forCellReuseIdentifier: "selectorCell")
@@ -37,21 +39,20 @@ class ViewController: UIViewController {
         viewModel.fetchData()
         bindTableView()
         didTapBind()
-
     }
     
-    // MARK: - Configure Layout
+    // Configure Layout
     private func configureLayout() {
         view.addSubview(tableView)
-        
         tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
     }
 }
-
+// MARK: - RX bindings to tableView
 extension ViewController {
+    // tableView data binding
     func bindTableView() {
         tableView.rx.setDelegate(self).disposed(by: disposeBag)
         viewModel.someData
@@ -75,30 +76,18 @@ extension ViewController {
                 }
             }.disposed(by: disposeBag)
     }
-    
+    // forSelectedRowAt binding
     func didTapBind() {
         tableView.rx.itemSelected
                             .subscribe(onNext: { [weak self] indexPath in
-                                print("HELLO")
                                 guard let data = try? self?.viewModel.someData.value()[indexPath.row] else { return }
                                 let name = data.type.rawValue
                                 let color = data.backgroundColor
-                                print("HEEELLLL" + name)
                                 self?.coordinator?.detailView(text: name, index: indexPath.row, color: color)
                             }).disposed(by: disposeBag)
     }
 }
 
-extension ViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
-    
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        guard let data = try? viewModel.someData.value()[indexPath.row] else { return }
-//        let name = data.type.rawValue
-//        let color = data.backgroundColor
-//        coordinator?.detailView(text: name, index: indexPath.row, color: color)
-//    }
-}
+// TableView Delegate
+extension ViewController: UITableViewDelegate { }
 

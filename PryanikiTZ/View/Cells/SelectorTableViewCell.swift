@@ -10,7 +10,7 @@ import RxCocoa
 
 class SelectorTableViewCell: UITableViewCell {
     
-    var data: DomenData?
+    var data: DomainData?
     var pickerData: [Variant] = [Variant]()
     
     override func layoutSubviews() {
@@ -23,18 +23,17 @@ class SelectorTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     @IBOutlet weak var selectorFromData: UIPickerView!
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
 }
 
+// MARK: - Selector Delegate and DataSource
 extension SelectorTableViewCell: UIPickerViewDataSource, UIPickerViewDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

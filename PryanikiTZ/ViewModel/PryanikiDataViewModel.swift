@@ -11,8 +11,9 @@ import RxSwift
 
 class PryanikiListDataViewModel {
     
-    var someData = BehaviorSubject(value: [DomenData]())
+    var someData = BehaviorSubject(value: [DomainData]())
     
+    // MARK: - Networking using Alamofire
     func fetchData() {
         // https://pryaniky.com/static/json/sample.json
         let url = "https://pryaniky.com/static/json/sample.json"
@@ -27,8 +28,9 @@ class PryanikiListDataViewModel {
         }
     }
     
-    private func createItems(dataPrya: PryanikiData) -> [DomenData] {
-        var domenDataArray = [DomenData]()
+    // MARK: - Creating DomainData to use it in app insteed networking one 
+    private func createItems(dataPrya: PryanikiData) -> [DomainData] {
+        var domenDataArray = [DomainData]()
         
         let hzTypeData = dataPrya.data.first { anotherData in
             anotherData.name == .hz
@@ -45,11 +47,11 @@ class PryanikiListDataViewModel {
         for type in dataPrya.view {
             switch type {
             case .hz:
-                domenDataArray.append(DomenData(type: .hz, text: hzTypeData.text, url: hzTypeData.url, selectedId: hzTypeData.selectedId, variants: hzTypeData.variants, backgroundColor: .systemBlue))
+                domenDataArray.append(DomainData(type: .hz, text: hzTypeData.text, url: hzTypeData.url, selectedId: hzTypeData.selectedId, variants: hzTypeData.variants, backgroundColor: .systemBlue))
             case .picture:
-                domenDataArray.append(DomenData(type: .picture, text: pictureTypeData.text, url: pictureTypeData.url, selectedId: pictureTypeData.selectedId, variants: pictureTypeData.variants, backgroundColor: .systemPurple))
+                domenDataArray.append(DomainData(type: .picture, text: pictureTypeData.text, url: pictureTypeData.url, selectedId: pictureTypeData.selectedId, variants: pictureTypeData.variants, backgroundColor: .systemPurple))
             case .selector:
-                domenDataArray.append(DomenData(type: .selector, text: selectoeTypeData.text, url: selectoeTypeData.url, selectedId: selectoeTypeData.selectedId, variants: selectoeTypeData.variants, backgroundColor: .systemPink))
+                domenDataArray.append(DomainData(type: .selector, text: selectoeTypeData.text, url: selectoeTypeData.url, selectedId: selectoeTypeData.selectedId, variants: selectoeTypeData.variants, backgroundColor: .systemPink))
             }
         }
         

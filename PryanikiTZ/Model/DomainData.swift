@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 // MARK: - Domen Data Model
-struct DomenData {
+struct DomainData {
     let type: Names
     let text: String?
     let url: String?

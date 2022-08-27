@@ -16,7 +16,7 @@
 		125103D128B7A4EB002AEDE6 /* PryanikiTZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125103D028B7A4EB002AEDE6 /* PryanikiTZTests.swift */; };
 		125103DB28B7A4EB002AEDE6 /* PryanikiTZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125103DA28B7A4EB002AEDE6 /* PryanikiTZUITests.swift */; };
 		125103DD28B7A4EB002AEDE6 /* PryanikiTZUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125103DC28B7A4EB002AEDE6 /* PryanikiTZUITestsLaunchTests.swift */; };
-		12882F8228B95AF800CF7B80 /* DomenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12882F8128B95AF700CF7B80 /* DomenData.swift */; };
+		12882F8228B95AF800CF7B80 /* DomainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12882F8128B95AF700CF7B80 /* DomainData.swift */; };
 		12882F8E28B96E6F00CF7B80 /* HzTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12882F8C28B96E6F00CF7B80 /* HzTableViewCell.swift */; };
 		12882F8F28B96E6F00CF7B80 /* HzTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12882F8D28B96E6F00CF7B80 /* HzTableViewCell.xib */; };
 		12882F9428B96E8C00CF7B80 /* SelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12882F9228B96E8C00CF7B80 /* SelectorTableViewCell.swift */; };
@@ -65,7 +65,7 @@
 		125103D628B7A4EB002AEDE6 /* PryanikiTZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PryanikiTZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		125103DA28B7A4EB002AEDE6 /* PryanikiTZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikiTZUITests.swift; sourceTree = "<group>"; };
 		125103DC28B7A4EB002AEDE6 /* PryanikiTZUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikiTZUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		12882F8128B95AF700CF7B80 /* DomenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomenData.swift; sourceTree = "<group>"; };
+		12882F8128B95AF700CF7B80 /* DomainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainData.swift; sourceTree = "<group>"; };
 		12882F8C28B96E6F00CF7B80 /* HzTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HzTableViewCell.swift; sourceTree = "<group>"; };
 		12882F8D28B96E6F00CF7B80 /* HzTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HzTableViewCell.xib; sourceTree = "<group>"; };
 		12882F9228B96E8C00CF7B80 /* SelectorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorTableViewCell.swift; sourceTree = "<group>"; };
@@ -204,7 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				12C8E7BB28B7B09100042802 /* PryanikiData.swift */,
-				12882F8128B95AF700CF7B80 /* DomenData.swift */,
+				12882F8128B95AF700CF7B80 /* DomainData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -484,7 +484,7 @@
 				12882F8E28B96E6F00CF7B80 /* HzTableViewCell.swift in Sources */,
 				12882F9828B96E9C00CF7B80 /* ImageTableViewCell.swift in Sources */,
 				12C8E7BC28B7B09100042802 /* PryanikiData.swift in Sources */,
-				12882F8228B95AF800CF7B80 /* DomenData.swift in Sources */,
+				12882F8228B95AF800CF7B80 /* DomainData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

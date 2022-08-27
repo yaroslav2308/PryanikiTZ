@@ -9,7 +9,7 @@ import UIKit
 
 class HzTableViewCell: UITableViewCell {
     
-    var data: DomenData?
+    var data: DomainData?
     
     override func layoutSubviews() {
         textFromData?.textColor = .white

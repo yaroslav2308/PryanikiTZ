@@ -15,6 +15,7 @@ class DetailViewController: UIViewController {
     var index: Int = 0
     var color: UIColor = .white
     
+    // Label
     private lazy var selectedIdLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 50)
@@ -31,11 +32,13 @@ class DetailViewController: UIViewController {
         self.navigationController?.navigationBar.tintColor = .white;
     }
     
+    // Setting label text and navigation bar title 
     private func setProperties() {
         navigationItem.title = text
         selectedIdLabel.text = String(index)
     }
     
+    // Configure layout (label)
     private func configureLayout() {
         view.addSubview(selectedIdLabel)
         selectedIdLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -43,4 +46,17 @@ class DetailViewController: UIViewController {
         selectedIdLabel.heightAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.1).isActive = true
     }
 
+}
+
+// MARK: - Title color change
+extension DetailViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+    }
 }
