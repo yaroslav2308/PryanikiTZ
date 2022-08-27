@@ -18,6 +18,8 @@ class SelectorTableViewCell: UITableViewCell {
         pickerData = safeData.variants ?? [Variant]()
         selectorFromData.delegate = self
         selectorFromData.dataSource = self
+        // for better visual experience to separate picker and cell you can uncomment next line of code
+//        selectorFromData.backgroundColor = .white
         backgroundColor = safeData.backgroundColor
     }
 

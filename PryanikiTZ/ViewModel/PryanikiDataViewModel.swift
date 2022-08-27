@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 import RxSwift
+import UIKit
 
 class PryanikiListDataViewModel {
     
@@ -28,9 +29,9 @@ class PryanikiListDataViewModel {
         }
     }
     
-    // MARK: - Creating DomainData to use it in app insteed networking one 
+    // MARK: - Creating DomainData to use it in app insteed networking one
     private func createItems(dataPrya: PryanikiData) -> [DomainData] {
-        var domenDataArray = [DomainData]()
+        var domainDataArray = [DomainData]()
         
         let hzTypeData = dataPrya.data.first { anotherData in
             anotherData.name == .hz
@@ -47,14 +48,51 @@ class PryanikiListDataViewModel {
         for type in dataPrya.view {
             switch type {
             case .hz:
-                domenDataArray.append(DomainData(type: .hz, text: hzTypeData.text, url: hzTypeData.url, selectedId: hzTypeData.selectedId, variants: hzTypeData.variants, backgroundColor: .systemBlue))
+                domainDataArray.append(DomainData(type: .hz, text: hzTypeData.text, url: hzTypeData.url, selectedId: hzTypeData.selectedId, variants: hzTypeData.variants, backgroundColor: .systemBlue))
             case .picture:
-                domenDataArray.append(DomainData(type: .picture, text: pictureTypeData.text, url: pictureTypeData.url, selectedId: pictureTypeData.selectedId, variants: pictureTypeData.variants, backgroundColor: .systemPurple))
+                domainDataArray.append(DomainData(type: .picture, text: pictureTypeData.text, url: pictureTypeData.url, selectedId: pictureTypeData.selectedId, variants: pictureTypeData.variants, backgroundColor: .systemPurple))
             case .selector:
-                domenDataArray.append(DomainData(type: .selector, text: selectoeTypeData.text, url: selectoeTypeData.url, selectedId: selectoeTypeData.selectedId, variants: selectoeTypeData.variants, backgroundColor: .systemPink))
+                domainDataArray.append(DomainData(type: .selector, text: selectoeTypeData.text, url: selectoeTypeData.url, selectedId: selectoeTypeData.selectedId, variants: selectoeTypeData.variants, backgroundColor: .systemPink))
             }
         }
         
-        return domenDataArray
+        return domainDataArray
+    }
+
+    // MARK: - Binding tableView
+    func bind(tableView: UITableView, coordinator: AppCoordinator?, disposeBag: DisposeBag) {
+        self.someData
+            .bind(to: tableView.rx.items) { (tv, row, item) -> UITableViewCell in
+                switch item.type {
+                case .hz:
+                    let cell = tableView.dequeueReusableCell(withIdentifier: "hzCell", for: IndexPath.init(row: row, section: 0)) as! HzTableViewCell
+                    cell.data = item
+                    cell.selectionStyle = .none
+                    return cell
+                case .picture:
+                    let cell = tableView.dequeueReusableCell(withIdentifier: "imageCell", for: IndexPath.init(row: row, section: 0)) as! ImageTableViewCell
+                    cell.data = item
+                    cell.selectionStyle = .none
+                    return cell
+                case .selector:
+                    let cell = tableView.dequeueReusableCell(withIdentifier: "selectorCell", for: IndexPath.init(row: row, section: 0)) as! SelectorTableViewCell
+                    cell.data = item
+                    cell.selectionStyle = .none
+                    return cell
+                }
+            }.disposed(by: disposeBag)
+        
+        bindSelectedRow(tableView: tableView, coordinator: coordinator, disposeBag: disposeBag)
+    }
+
+    // MARK: - Bind row seelction
+    private func bindSelectedRow(tableView: UITableView, coordinator: AppCoordinator?, disposeBag: DisposeBag) {
+        tableView.rx.itemSelected
+                            .subscribe(onNext: { [weak self] indexPath in
+                                guard let data = try? self?.someData.value()[indexPath.row] else { return }
+                                let name = data.type.rawValue
+                                let color = data.backgroundColor
+                                coordinator?.detailView(text: name, index: indexPath.row, color: color)
+                            }).disposed(by: disposeBag)
     }
 }

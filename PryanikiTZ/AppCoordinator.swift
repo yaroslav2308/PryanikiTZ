@@ -9,17 +9,17 @@ import Foundation
 import UIKit
 
 class AppCoordinator {
-    var nanigationController: UINavigationController
+    var navigationController: UINavigationController
     
     init(nav: UINavigationController) {
-        self.nanigationController = nav
+        self.navigationController = nav
     }
     
     func start() {
         let vc = ViewController()
         vc.coordinator = self
         vc.setUpVC(viewModel: PryanikiListDataViewModel())
-        nanigationController.pushViewController(vc, animated: false)
+        navigationController.pushViewController(vc, animated: false)
     }
     
     func detailView(text: String, index: Int, color: UIColor) {
@@ -28,6 +28,6 @@ class AppCoordinator {
         vc.index = index
         vc.color = color
         vc.coordinator = self
-        nanigationController.pushViewController(vc, animated: true)
+        navigationController.pushViewController(vc, animated: true)
     }
 }
